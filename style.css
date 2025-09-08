@@ -1,0 +1,13 @@
+
+body{
+    padding: 0;
+    margin:  0 ;
+}
+
+.heroContainer img{
+    max-width: 40svw;
+}
+.cityContainer img{
+    width: 60svw;
+    margin-top: -8svw;
+}
