@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1" name="viewport"/>
-  <meta name="description" content="Екатерина Ложкова - специалист по недвижимости в Краснодаре и крае. Помощь в покупке, продаже и аренде жилья.">
-  <meta name="keywords" content="недвижимость, Краснодар, купить квартиру, продать квартиру, аренда жилья, специалист по недвижимости">
-  <title>Екатерина Ложкова | Специалист по недвижимости в Краснодаре</title>
+  <meta name="description" content="Екатерина Ложкова - эксперт по недвижимости в Краснодаре и Краснодарском крае. Покупка недвижимости от застройщика и на вторичном рынке. Ипотека без первоначального взноса, льготные программы господдержки.">
+  <meta name="keywords" content="недвижимость Краснодар, купить квартиру, ипотека, вторичное жилье, льготная ипотека, господдержка, новостройки, вторичка, Геленджик, Анапа, Крым, Сочи, Новороссийск, Адыгея, у моря">
+  <title>Екатерина Ложкова | Эксперт по недвижимости в Краснодаре и Краснодарском крае</title>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
@@ -393,6 +393,66 @@
       content: '✓';
       position: absolute;
       left: 0;
+      color: var(--primary);
+      font-weight: bold;
+    }
+    
+    /* Special Offers */
+    .special-offers {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      margin-top: 50px;
+    }
+    
+    .offer-card {
+      background: linear-gradient(135deg, #f5f7fa 0%, #e4e8f0 100%);
+      border-radius: 15px;
+      padding: 30px;
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
+      border-left: 4px solid var(--primary);
+    }
+    
+    .offer-badge {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: var(--primary);
+      color: white;
+      padding: 5px 10px;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      font-weight: 600;
+    }
+    
+    .offer-title {
+      font-size: 1.4rem;
+      margin-bottom: 15px;
+      color: var(--dark);
+    }
+    
+    .offer-description {
+      margin-bottom: 20px;
+      color: var(--gray);
+    }
+    
+    .offer-features {
+      list-style: none;
+      margin-bottom: 25px;
+    }
+    
+    .offer-features li {
+      margin-bottom: 10px;
+      padding-left: 25px;
+      position: relative;
+    }
+    
+    .offer-features li:before {
+      content: '•';
+      position: absolute;
+      left: 10px;
       color: var(--primary);
       font-weight: bold;
     }
@@ -813,17 +873,34 @@
     .opacity-0 {
       opacity: 0;
     }
+    
+    .hashtags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 20px;
+    }
+    
+    .hashtag {
+      background: rgba(198, 40, 40, 0.1);
+      color: var(--primary);
+      padding: 5px 12px;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
   </style>
 </head>
 <body>
   <!-- Header -->
   <header>
     <div class="container header-container">
-      <a href="#" class="logo">Екатерина Ложкова <span class="logo-dot"></span></a>
+      <a href="#" class="logo">ALLIANCE GROUP <span class="logo-dot"></span></a>
       <nav>
         <ul>
           <li><a href="#about">Обо мне</a></li>
           <li><a href="#services">Услуги</a></li>
+          <li><a href="#offers">Спецпредложения</a></li>
           <li><a href="#reviews">Отзывы</a></li>
           <li><a href="#contact">Контакты</a></li>
         </ul>
@@ -836,12 +913,19 @@
     <div class="container">
       <div class="hero-content">
         <div class="hero-text fade-in">
-          <span class="hero-badge">Специалист по недвижимости</span>
-          <h1 class="hero-title">Найду лучшую недвижимость <span class="hero-highlight">для вас</span></h1>
-          <p class="hero-description">Сопровождаю на всех этапах покупки и продажи квартир, апартаментов и инвестиционных объектов в Краснодаре и крае.</p>
-          <div class="hero-actions">
+          <span class="hero-badge">Директор агентства недвижимости</span>
+          <h1 class="hero-title">Экспертная помощь в покупке недвижимости <span class="hero-highlight">в Краснодарском крае</span></h1>
+          <p class="hero-description">Профессиональный подбор недвижимости с гарантией результата. Специализация: ипотека без первоначального взноса, вторичка по лучшей ставке, льготные программы господдержки.</p>
+          <div class="hashtags">
+            <span class="hashtag">#Ипотека</span>
+            <span class="hashtag">#БезПервоначальногоВзноса</span>
+            <span class="hashtag">#ВторичкаПоЛучшейЦене</span>
+            <span class="hashtag">#ПоЛучшейСтавке</span>
+            <span class="hashtag">#УМоря</span>
+          </div>
+          <div class="hero-actions mt-20">
             <a href="#contact" class="btn btn-primary">Получить консультацию</a>
-            <a href="#services" class="btn btn-outline">Мои услуги</a>
+            <a href="#offers" class="btn btn-outline">Спецпредложения</a>
           </div>
         </div>
         <div class="hero-image fade-in delay-1">
@@ -853,24 +937,24 @@
       <div class="features">
         <div class="feature fade-in delay-1">
           <div class="feature-icon">
-            <i class="fas fa-home"></i>
+            <i class="fas fa-key"></i>
           </div>
-          <h3 class="feature-title">Доступ к эксклюзивным предложениям</h3>
-          <p class="feature-description">Получите доступ к объектам, которых нет в открытом доступе</p>
+          <h3 class="feature-title">Новостройки от застройщика</h3>
+          <p class="feature-description">Прямые договоры с надежными застройщиками Краснодара и края</p>
         </div>
         <div class="feature fade-in delay-2">
           <div class="feature-icon">
-            <i class="fas fa-shield-alt"></i>
+            <i class="fas fa-home"></i>
           </div>
-          <h3 class="feature-title">Полная юридическая безопасность</h3>
-          <p class="feature-description">Тщательная проверка всех документов и чистоты сделки</p>
+          <h3 class="feature-title">Вторичное жилье</h3>
+          <p class="feature-description">Подбор лучших вариантов на вторичном рынке по выгодным ценам</p>
         </div>
         <div class="feature fade-in delay-3">
           <div class="feature-icon">
             <i class="fas fa-percentage"></i>
           </div>
-          <h3 class="feature-title">Скидки и акции</h3>
-          <p class="feature-description">Специальные условия от застройщиков и агентств</p>
+          <h3 class="feature-title">Льготная ипотека</h3>
+          <p class="feature-description">Все программы господдержки и сниженные ставки для наших клиентов</p>
         </div>
       </div>
     </div>
@@ -879,95 +963,160 @@
   <!-- About Section -->
   <section class="section section-light" id="about">
     <div class="container">
-      <h2 class="text-center fade-in">Почему выбирают меня</h2>
-      <p class="text-center mb-40 fade-in">Я умею слушать и слышать ваши истинные мотивы и потребности, и находить пути их реализации</p>
+      <h2 class="text-center fade-in">Эксперт в области недвижимости</h2>
+      <p class="text-center mb-40 fade-in">Меня зовут Екатерина, я — директор агентства недвижимости ALLIANCE GROUP и эксперт по жилой недвижимости в Краснодарском крае. Более 3 лет я профессионально сопровождаю клиентов на всех этапах покупки и продажи недвижимости.</p>
       
       <div class="features">
         <div class="feature fade-in">
           <div class="feature-icon">
             <i class="fas fa-search"></i>
           </div>
-          <h3 class="feature-title">Подбор объектов под ваш запрос</h3>
+          <h3 class="feature-title">Профессиональный подбор</h3>
           <p class="feature-description">Тщательный анализ рынка и подбор вариантов, соответствующих вашим критериям</p>
         </div>
         <div class="feature fade-in delay-1">
           <div class="feature-icon">
             <i class="fas fa-file-contract"></i>
           </div>
-          <h3 class="feature-title">Диагностика объекта</h3>
-          <p class="feature-description">Проверка документов и юридической чистоты недвижимости</p>
+          <h3 class="feature-title">Юридическое сопровождение</h3>
+          <p class="feature-description">Полная проверка документов и юридической чистоты недвижимости</p>
         </div>
         <div class="feature fade-in delay-2">
           <div class="feature-icon">
             <i class="fas fa-handshake"></i>
           </div>
-          <h3 class="feature-title">Переговоры о цене и условиях</h3>
+          <h3 class="feature-title">Экспертные переговоры</h3>
           <p class="feature-description">Опыт ведения переговоров для получения наилучших условий для вас</p>
         </div>
         <div class="feature fade-in delay-3">
           <div class="feature-icon">
-            <i class="fas fa-calendar-alt"></i>
+            <i class="fas fa-ruble-sign"></i>
           </div>
-          <h3 class="feature-title">Удобный график просмотров</h3>
-          <p class="feature-description">Составление комфортного для вас графика встреч и просмотров</p>
+          <h3 class="feature-title">Специальные условия по ипотеке</h3>
+          <p class="feature-description">Доступ к специальным программам и сниженным процентным ставкам</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Special Offers Section -->
+  <section class="section" id="offers">
+    <div class="container">
+      <h2 class="fade-in">Специальные предложения</h2>
+      <p class="mb-40 fade-in">Эксклюзивные условия по ипотеке и специальные предложения от партнеров</p>
+      
+      <div class="special-offers">
+        <div class="offer-card fade-in">
+          <div class="offer-badge">Выгодно</div>
+          <h3 class="offer-title">Ипотека без первоначального взноса</h3>
+          <p class="offer-description">Уникальные предложения от банков-партнеров для наших клиентов</p>
+          <ul class="offer-features">
+            <li>Специальные условия для новых строек</li>
+            <li>Пониженная процентная ставка</li>
+            <li>Минимальный пакет документов</li>
+            <li>Ускоренное рассмотрение заявки</li>
+          </ul>
+          <a href="#contact" class="btn btn-primary">Узнать условия</a>
+        </div>
+        
+        <div class="offer-card fade-in delay-1">
+          <div class="offer-badge">Эксклюзив</div>
+          <h3 class="offer-title">Льготная ипотека с господдержкой</h3>
+          <p class="offer-description">Все программы государственной поддержки для семей с детьми, молодых специалистов и IT-сотрудников</p>
+          <ul class="offer-features">
+            <li>Ставка от 0.1% для отдельных категорий</li>
+            <li>Субсидирование первоначального взноса</li>
+            <li>Специальные условия для новостроек</li>
+            <li>Юридическое сопровождение сделки</li>
+          </ul>
+          <a href="#contact" class="btn btn-primary">Получить консультацию</a>
+        </div>
+        
+        <div class="offer-card fade-in delay-2">
+          <div class="offer-badge">Акция</div>
+          <h3 class="offer-title">Вторичное жилье по лучшей ставке</h3>
+          <p class="offer-description">Специальные предложения по ипотеке на вторичном рынке недвижимости</p>
+          <ul class="offer-features">
+            <li>Пониженная процентная ставка</li>
+            <li>Длительный срок кредитования</li>
+            <li>Минимальные требования к заемщику</li>
+            <li>Возможность учесть доход от аренды</li>
+          </ul>
+          <a href="#contact" class="btn btn-primary">Найти варианты</a>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Services Section -->
-  <section class="section" id="services">
+  <section class="section section-light" id="services">
     <div class="container">
-      <h2 class="fade-in">Мои услуги</h2>
-      <p class="mb-40 fade-in">Полный спектр услуг по покупке, продаже и сопровождению сделок с недвижимостью</p>
+      <h2 class="fade-in">Направления работы</h2>
+      <p class="mb-40 fade-in">Полный спектр услуг по покупке, продаже и сопровождению сделок с недвижимостью в Краснодарском крае</p>
       
       <div class="services-grid">
         <div class="service-card fade-in">
           <div class="service-header">
-            <h3 class="service-title">Продать квартиру / дом</h3>
+            <h3 class="service-title">Новостройки от застройщика</h3>
           </div>
           <div class="service-body">
             <ul class="service-list">
-              <li>Подготовка объявления включая фотосъемку</li>
-              <li>Публикация объявлений согласно стратегии продаж</li>
-              <li>Коммуникация с покупателями</li>
-              <li>Подготовка документов</li>
-              <li>Ведение сделки</li>
+              <li>Прямые договоры с проверенными застройщиками</li>
+              <li>Эксклюзивные условия покупки</li>
+              <li>Сопровождение на всех этапах</li>
+              <li>Юридическая проверка документов</li>
+              <li>Специальные ипотечные программы</li>
             </ul>
-            <a href="#contact" class="btn btn-primary">Обсудить продажу</a>
+            <div class="hashtags">
+              <span class="hashtag">#Краснодар</span>
+              <span class="hashtag">#Новороссийск</span>
+              <span class="hashtag">#Анапа</span>
+            </div>
+            <a href="#contact" class="btn btn-primary">Подобрать новостройку</a>
           </div>
         </div>
         
         <div class="service-card fade-in delay-1">
           <div class="service-header">
-            <h3 class="service-title">Купить квартиру / дом</h3>
+            <h3 class="service-title">Вторичное жилье</h3>
           </div>
           <div class="service-body">
             <ul class="service-list">
-              <li>Консультация, конкретизация вашего запроса</li>
-              <li>Анализ рынка по открытым и закрытым источникам</li>
-              <li>Коммуникация с продавцами</li>
-              <li>Выезд на просмотры</li>
-              <li>Юридическая проверка</li>
-              <li>Ведение сделки</li>
+              <li>Тщательный подбор проверенных вариантов</li>
+              <li>Переговоры о цене и условиях сделки</li>
+              <li>Полная юридическая проверка</li>
+              <li>Оформление сделки купли-продажи</li>
+              <li>Ипотека на вторичное жилье по лучшей ставке</li>
             </ul>
-            <a href="#contact" class="btn btn-primary">Найти недвижимость</a>
+            <div class="hashtags">
+              <span class="hashtag">#Вторичка</span>
+              <span class="hashtag">#ПоЛучшейЦене</span>
+              <span class="hashtag">#Ипотека</span>
+            </div>
+            <a href="#contact" class="btn btn-primary">Найти вариант</a>
           </div>
         </div>
         
         <div class="service-card fade-in delay-2">
           <div class="service-header">
-            <h3 class="service-title">Аренда / сдача жилья</h3>
+            <h3 class="service-title">Недвижимость у моря</h3>
           </div>
           <div class="service-body">
             <ul class="service-list">
-              <li>Подбор арендаторов или объектов аренды</li>
-              <li>Проверка документов и платежеспособности</li>
-              <li>Составление договора аренды</li>
-              <li>Организация передачи объекта</li>
-              <li>Контроль соблюдения условий договора</li>
+              <li>Квартиры и апартаменты в курортных городах</li>
+              <li>Инвестиционные объекты для сдачи в аренду</li>
+              <li>Помощь в подборе и оформлении</li>
+              <li>Управление недвижимостью удаленно</li>
+              <li>Консультации по доходности инвестиций</li>
             </ul>
-            <a href="#contact" class="btn btn-primary">Обсудить аренду</a>
+            <div class="hashtags">
+              <span class="hashtag">#Геленджик</span>
+              <span class="hashtag">#Сочи</span>
+              <span class="hashtag">#Анапа</span>
+              <span class="hashtag">#Крым</span>
+              <span class="hashtag">#Адыгея</span>
+            </div>
+            <a href="#contact" class="btn btn-primary">Подобрать у моря</a>
           </div>
         </div>
       </div>
@@ -978,9 +1127,9 @@
   <section class="section">
     <div class="container">
       <div class="cta fade-in">
-        <h2 class="cta-title">Бесплатная консультация</h2>
-        <p class="cta-description">Со мной стоит проконсультироваться, даже если вы сейчас не собираетесь покупать или продавать недвижимость. Всегда полезно знать о своих возможностях.</p>
-        <a href="#contact" class="btn btn-outline">Записаться на консультацию</a>
+        <h2 class="cta-title">Бесплатная консультация по ипотеке</h2>
+        <p class="cta-description">Подберём лучшую программу ипотечного кредитования с учетом ваших возможностей и потребностей. Сэкономим ваше время и деньги!</p>
+        <a href="#contact" class="btn btn-outline">Получить консультацию</a>
       </div>
     </div>
   </section>
@@ -1000,7 +1149,7 @@
               <div class="testimonial-rating">★★★★★</div>
             </div>
           </div>
-          <p>Хочу выразить благодарность риелтору Екатерине. Чудесный человек, грамотный специалист! Всё прошло легко, чётко и быстро. От сотрудничества только положительные эмоции! С удовольствием буду рекомендовать знакомым.</p>
+          <p>Благодарю Екатерину за помощь в получении ипотеки без первоначального взноса! Смогли купить квартиру в новостройке, хотя уже не надеялись. Профессионал своего дела, знает все тонкости ипотечных программ.</p>
         </div>
         
         <div class="testimonial fade-in delay-1">
@@ -1011,7 +1160,18 @@
               <div class="testimonial-rating">★★★★★</div>
             </div>
           </div>
-          <p>Благодарю Екатерину за качественную работу. Екатерина от начала и до конца сопровождала продажу недвижимости. Ни один вопрос или просьба не остались без внимания. Я очень переживала, но напрасно. Еще раз спасибо!</p>
+          <p>Обратились за помощью в покупке квартиры в Сочи у моря. Екатерина не только подобрала отличные варианты, но и помогла получить льготную ипотеку как молодой семье. Теперь у нас есть своя квартира в курортном городе!</p>
+        </div>
+
+        <div class="testimonial fade-in delay-2">
+          <div class="testimonial-header">
+            <img src="https://images.unsplash.com/photo-1552058544-f2b08422138a?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&h=100&q=80" alt="Антон К." class="testimonial-avatar">
+            <div>
+              <div class="testimonial-name">Антон К.</div>
+              <div class="testimonial-rating">★★★★★</div>
+            </div>
+          </div>
+          <p>Катя помогла мне как IT-специалисту получить ипотеку по сверхнизкой ставке. Ни в одном банке мне не предложили таких условий! Очень благодарен за экспертный подход и реальную помощь в сложном процессе.</p>
         </div>
       </div>
     </div>
@@ -1021,7 +1181,7 @@
   <section class="section" id="contact">
     <div class="container">
       <h2 class="fade-in">Свяжитесь со мной</h2>
-      <p class="mb-40 fade-in">Готов помочь вам с покупкой, продажей или арендой недвижимости в Краснодаре и крае</p>
+      <p class="mb-40 fade-in">Готов помочь вам с покупкой недвижимости в Краснодарском крае. Ответим на все вопросы по ипотеке и подберем лучшие варианты</p>
       
       <div class="contact-grid">
         <div class="contact-info fade-in">
@@ -1036,7 +1196,7 @@
             <div class="contact-icon">
               <i class="fas fa-envelope"></i>
             </div>
-            <div class="contact-text">ekaterina@example.com</div>
+            <div class="contact-text">ekaterina@alliance-group.ru</div>
           </div>
           
           <div class="contact-item">
@@ -1052,6 +1212,18 @@
             <a href="#" class="social-link"><i class="fab fa-viber"></i></a>
             <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
           </div>
+
+          <div class="hashtags mt-20">
+            <span class="hashtag">#ПокупкаНедвижимостиВКраснодаре</span>
+            <span class="hashtag">#УМоря</span>
+            <span class="hashtag">#ВКраснодарскомКрае</span>
+            <span class="hashtag">#Геленджик</span>
+            <span class="hashtag">#Анапа</span>
+            <span class="hashtag">#Крым</span>
+            <span class="hashtag">#Сочи</span>
+            <span class="hashtag">#Новороссийск</span>
+            <span class="hashtag">#Адыгея</span>
+          </div>
         </div>
         
         <div class="contact-form fade-in delay-1">
@@ -1061,6 +1233,16 @@
             </div>
             <div class="form-group">
               <input type="tel" placeholder="Ваш телефон" class="form-input" required>
+            </div>
+            <div class="form-group">
+              <select class="form-input">
+                <option value="">Выберите интересующую услугу</option>
+                <option value="new">Новостройки от застройщика</option>
+                <option value="secondary">Вторичное жилье</option>
+                <option value="mortgage">Ипотека без первоначального взноса</option>
+                <option value="preferential">Льготная ипотека</option>
+                <option value="sea">Недвижимость у моря</option>
+              </select>
             </div>
             <div class="form-group">
               <textarea placeholder="Сообщение" rows="4" class="form-input"></textarea>
@@ -1077,27 +1259,31 @@
     <div class="container">
       <div class="footer-content">
         <div class="footer-info">
-          <a href="#" class="footer-logo">Екатерина Ложкова</a>
-          <p class="footer-description">Специалист по недвижимости в Краснодаре и крае. Помогаю подобрать жилье в бюджете, провести переговоры и безопасно провести сделку.</p>
+          <a href="#" class="footer-logo">ALLIANCE GROUP</a>
+          <p class="footer-description">Агентство недвижимости в Краснодаре и Краснодарском крае. Профессиональный подбор недвижимости с гарантией результата.</p>
         </div>
         
         <div class="footer-links">
           <h4 class="footer-heading">Услуги</h4>
           <ul>
-            <li><a href="#">Купить квартиру</a></li>
-            <li><a href="#">Продать квартиру</a></li>
-            <li><a href="#">Аренда жилья</a></li>
-            <li><a href="#">Юридическое сопровождение</a></li>
+            <li><a href="#">Новостройки от застройщика</a></li>
+            <li><a href="#">Вторичное жилье</a></li>
+            <li><a href="#">Ипотека без первоначального взноса</a></li>
+            <li><a href="#">Льготная ипотека</a></li>
+            <li><a href="#">Недвижимость у моря</a></li>
           </ul>
         </div>
         
         <div class="footer-links">
-          <h4 class="footer-heading">Навигация</h4>
+          <h4 class="footer-heading">Регионы</h4>
           <ul>
-            <li><a href="#about">Обо мне</a></li>
-            <li><a href="#services">Услуги</a></li>
-            <li><a href="#reviews">Отзывы</a></li>
-            <li><a href="#contact">Контакты</a></li>
+            <li><a href="#">Краснодар</a></li>
+            <li><a href="#">Геленджик</a></li>
+            <li><a href="#">Анапа</a></li>
+            <li><a href="#">Сочи</a></li>
+            <li><a href="#">Новороссийск</a></li>
+            <li><a href="#">Крым</a></li>
+            <li><a href="#">Адыгея</a></li>
           </ul>
         </div>
         
@@ -1105,14 +1291,14 @@
           <h4 class="footer-heading">Контакты</h4>
           <ul>
             <li><a href="tel:+79284231261">+7 (928) 423-12-61</a></li>
-            <li><a href="mailto:ekaterina@example.com">ekaterina@example.com</a></li>
+            <li><a href="mailto:ekaterina@alliance-group.ru">ekaterina@alliance-group.ru</a></li>
             <li>Краснодар, ул. Красная, 100</li>
           </ul>
         </div>
       </div>
       
       <div class="footer-bottom">
-        <p>&copy; 2023 Екатерина Ложкова. Все права защищены.</p>
+        <p>&copy; 2023 Агентство недвижимости ALLIANCE GROUP. Все права защищены.</p>
       </div>
     </div>
   </footer>
@@ -1126,7 +1312,7 @@
   <div class="modal" id="contactModal">
     <div class="modal-content">
       <span class="modal-close" id="modalClose">&times;</span>
-      <h3 class="modal-title">Обратный звонок</h3>
+      <h3 class="modal-title">Консультация по ипотеке</h3>
       <form id="modalForm">
         <div class="form-group">
           <input type="text" placeholder="Ваше имя" class="form-input" required>
@@ -1135,9 +1321,15 @@
           <input type="tel" placeholder="Ваш телефон" class="form-input" required>
         </div>
         <div class="form-group">
-          <textarea placeholder="Ваш вопрос" rows="3" class="form-input"></textarea>
+          <select class="form-input">
+            <option value="">Интересует</option>
+            <option value="new">Новостройка</option>
+            <option value="secondary">Вторичное жилье</option>
+            <option value="mortgage">Ипотека без первоначального взноса</option>
+            <option value="preferential">Льготная ипотека</option>
+          </select>
         </div>
-        <button type="submit" class="btn btn-primary">Заказать звонок</button>
+        <button type="submit" class="btn btn-primary">Получить консультацию</button>
       </form>
     </div>
   </div>
